@@ -14,12 +14,24 @@ namespace WindowsFormsApplication1
 {
     public partial class Form1 : Form
     {
+        private MyClipboardViewer viewer;
+
         public Form1()
         {
+            // イベントハンドラを登録
+            viewer = new MyClipboardViewer(this);
+            viewer.ClipboardHandler += this.OnClipBoardChanged;
             InitializeComponent();
 
             ShowInTaskbar = false;
-            WindowState = FormWindowState.Minimized;
+            WindowState = FormWindowState.Normal;
+
+        }
+
+        // クリップボードにテキストがコピーされると呼び出される
+        private void OnClipBoardChanged(object sender, ClipboardEventArgs args)
+        {
+            this.textBox1.Text = args.Text;
         }
 
 
@@ -80,7 +92,8 @@ namespace WindowsFormsApplication1
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            Hide();
+           Hide();
+            
         }
     }
 }
