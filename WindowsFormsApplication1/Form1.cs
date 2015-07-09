@@ -15,9 +15,15 @@ namespace WindowsFormsApplication1
     public partial class Form1 : Form
     {
         private MyClipboardViewer viewer;
+        Process mouseTraceProcess;
 
         public Form1()
         {
+            if (mouseTraceProcess == null || !mouseTraceProcess.HasExited)
+            {
+                mouseTraceProcess = Process.Start(@"..\..\MouseTrace.exe");
+            }
+
             // イベントハンドラを登録
             viewer = new MyClipboardViewer(this);
             viewer.ClipboardHandler += this.OnClipBoardChanged;
@@ -25,7 +31,6 @@ namespace WindowsFormsApplication1
 
             ShowInTaskbar = false;
             WindowState = FormWindowState.Normal;
-
         }
 
         // クリップボードにテキストがコピーされると呼び出される
@@ -85,9 +90,9 @@ namespace WindowsFormsApplication1
 
         private void 終了ToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            mouseTraceProcess.Kill();
             notifyIcon1.Visible = false;
             Application.Exit();
-
         }
 
         private void Form1_Load(object sender, EventArgs e)
