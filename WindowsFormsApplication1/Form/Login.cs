@@ -13,19 +13,29 @@ namespace WindowsFormsApplication1
 {
     public partial class Login : Form
     {
+        // テキストで選択された文字列をクリップボードに保存するプロセスを保存する変数
         Process mouseTraceProcess;
 
         public Login()
         {
             InitializeComponent();
 
+            // テキストで選択された文字列をクリップボードに保存するプロセスがない場合は
+            // exeを立ち上げる
             if (mouseTraceProcess == null || !mouseTraceProcess.HasExited)
             {
                 mouseTraceProcess = Process.Start(@"..\..\MouseTrace.exe");
             }
 
+            // タスクバーへ表示しない
             ShowInTaskbar = false;
+            // ウィンドウのサイズはノーマルにする
             WindowState = FormWindowState.Normal;
+        }
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+
         }
 
         private void LoginButton_Click(object sender, EventArgs e)

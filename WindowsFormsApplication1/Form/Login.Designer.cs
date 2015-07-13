@@ -107,12 +107,12 @@
             this.終了ToolStripMenuItem,
             this.一覧ToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(149, 48);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(146, 48);
             // 
             // 終了ToolStripMenuItem
             // 
             this.終了ToolStripMenuItem.Name = "終了ToolStripMenuItem";
-            this.終了ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.終了ToolStripMenuItem.Size = new System.Drawing.Size(145, 22);
             this.終了ToolStripMenuItem.Text = "終了";
             this.終了ToolStripMenuItem.Click += new System.EventHandler(this.終了ToolStripMenuItem_Click);
             // 
@@ -120,7 +120,7 @@
             // 
             this.一覧ToolStripMenuItem.Name = "一覧ToolStripMenuItem";
             this.一覧ToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Q)));
-            this.一覧ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.一覧ToolStripMenuItem.Size = new System.Drawing.Size(145, 22);
             this.一覧ToolStripMenuItem.Text = "一覧";
             this.一覧ToolStripMenuItem.Click += new System.EventHandler(this.一覧ToolStripMenuItem_Click);
             // 
@@ -137,6 +137,7 @@
             this.Controls.Add(this.UserId);
             this.Name = "Login";
             this.Text = "ログイン";
+            this.Load += new System.EventHandler(this.Login_Load);
             this.contextMenuStrip1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
