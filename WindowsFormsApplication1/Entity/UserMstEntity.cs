@@ -7,11 +7,12 @@ using System.Threading.Tasks;
 
 namespace WindowsFormsApplication1.Entity
 {
-    [Table("sample")]
-    class sample
+    [Table("USER_MST")]
+    class UserMstEntity
     {
-        public Int64 Id { get; set; }
-        public string Name { get; set; }
-        public Int64 Age { get; set; }
+        public Int64 userId { get; set; }
+        public string userName { get; set; }
+        public string role { get; set; }
+        public Int64 sankaKahi { get; set; }
     }
 }
