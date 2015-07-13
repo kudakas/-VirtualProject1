@@ -88,6 +88,12 @@
     <Compile Include="Form\Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form\IndividualSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\IndividualSetting.Designer.cs">
+      <DependentUpon>IndividualSetting.cs</DependentUpon>
+    </Compile>
     <Compile Include="Service References\ClipboardEventArgs.cs" />
     <Compile Include="Form\Form1.cs">
       <SubType>Form</SubType>
@@ -101,6 +107,9 @@
     <Compile Include="Entity\sample.cs" />
     <EmbeddedResource Include="Form\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\IndividualSetting.resx">
+      <DependentUpon>IndividualSetting.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
