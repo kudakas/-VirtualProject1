@@ -10,7 +10,7 @@ using System.Windows.Forms;
 using System.Data.SQLite;
 using System.Diagnostics;
 using WindowsFormsApplication1.ServiceReferences;
-using WindowsFormsApplication1.Entity;
+using WindowsFormsApplication1.ServiceReferences;
 
 namespace WindowsFormsApplication1
 {
@@ -58,18 +58,25 @@ namespace WindowsFormsApplication1
         // データの追加
         private void regist_Click(object sender, EventArgs e) {
 
-                    using (var ctx = new CallEntityService())
+                    using (var db = new CallEntityService())
                     {
-                        sample sample = new sample
-                        {
-                            Name = "やまのは",
-                            Age = 10,
-                        };
-                        ctx.abc.Add(sample);
-                        int recordAffected = ctx.SaveChanges();
+                        //sample sample = new sample
+                        //{
+                        //    Name = "やまのは",
+                        //    Age = 10,
+                        //};
+                        //ctx.abc.Add(sample);
+                        //int recordAffected = ctx.SaveChanges();
+
+                        var q =
+                        from s in db.UserMstEntities
+                        where s.userId == 1
+                        select s;
+
+                        UserMstEntity[] a = q.ToArray();
 
           
-                        ctx.SaveChanges();
+                        //db.SaveChanges();
 
                     }
 
@@ -84,7 +91,7 @@ namespace WindowsFormsApplication1
 
             using (var ctx = new CallEntityService())
             {
-                sample[] abc = ctx.abc.Where(x => x.Age == 70).ToArray();
+                //sample[] abc = ctx.abc.Where(x => x.Age == 70).ToArray();
 
 
             }

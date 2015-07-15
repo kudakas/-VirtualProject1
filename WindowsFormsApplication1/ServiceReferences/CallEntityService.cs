@@ -5,7 +5,7 @@ using System.Text;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Data.Entity;
 using WindowsFormsApplication1;
-using WindowsFormsApplication1.Entity;
+using WindowsFormsApplication1.ServiceReferences;
 
 namespace WindowsFormsApplication1.ServiceReferences
 {

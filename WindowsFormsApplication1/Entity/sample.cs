@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace WindowsFormsApplication1.Entity
+namespace WindowsFormsApplication1.ServiceReferences
 {
     [Table("sample")]
     class sample
