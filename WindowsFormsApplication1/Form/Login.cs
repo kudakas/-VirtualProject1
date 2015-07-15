@@ -5,6 +5,7 @@ using System.Data;
 using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -16,6 +17,9 @@ namespace WindowsFormsApplication1
     {
         // テキストで選択された文字列をクリップボードに保存するプロセスを保存する変数
         Process mouseTraceProcess;
+
+        // Clipboardを常時監視する
+        private MyClipboardViewer viewer;
 
         public Login()
         {
