@@ -83,6 +83,7 @@
             this.BrowseButton.TabIndex = 4;
             this.BrowseButton.Text = "参照";
             this.BrowseButton.UseVisualStyleBackColor = true;
+            this.BrowseButton.Click += new System.EventHandler(this.BrowseButton_Click);
             // 
             // LoginButton
             // 
