@@ -9,6 +9,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SQLite;
 using System.Diagnostics;
+using WindowsFormsApplication1.ServiceReferences;
+using WindowsFormsApplication1.Entity;
 
 namespace WindowsFormsApplication1
 {
@@ -56,7 +58,7 @@ namespace WindowsFormsApplication1
         // データの追加
         private void regist_Click(object sender, EventArgs e) {
 
-                    using (var ctx = new dbconnect())
+                    using (var ctx = new CallEntityService())
                     {
                         sample sample = new sample
                         {
@@ -80,7 +82,7 @@ namespace WindowsFormsApplication1
         // データの取得
         private void get_Click(object sender, EventArgs e) {
 
-            using (var ctx = new dbconnect())
+            using (var ctx = new CallEntityService())
             {
                 sample[] abc = ctx.abc.Where(x => x.Age == 70).ToArray();
 
