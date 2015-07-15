@@ -9,7 +9,7 @@ using System.Net.Mail;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace WindowsFormsApplication1
+namespace WindowsFormsApplication1.ServiceReferences
 {
     class SendMailService
     {
@@ -36,7 +36,7 @@ namespace WindowsFormsApplication1
                     // パラメータ（%～%）の置換
                     msg.Body = sr.ReadToEnd()
                            .Replace("%DATE%", DateTime.Now.ToString("yyyy/MM/dd"))
-                           .Replace("%MESSAGET%", message);
+                           .Replace("%MESSAGE%", message);
                 }
 
                 // 差出人（From）
