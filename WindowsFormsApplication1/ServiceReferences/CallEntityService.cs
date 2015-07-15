@@ -11,7 +11,6 @@ namespace WindowsFormsApplication1.ServiceReferences
 {
     class CallEntityService : DbContext
     {
-        public DbSet<sample> abc { get; set; }
         public DbSet<ProjectMstEntity> ProjectMstEntities { get; set; }
         public DbSet<UserMstEntity> UserMstEntities { get; set; }
         public DbSet<WordDicEntity> WordDicEntities { get; set; }

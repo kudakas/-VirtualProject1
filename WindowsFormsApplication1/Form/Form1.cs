@@ -60,17 +60,9 @@ namespace WindowsFormsApplication1
 
                     using (var db = new CallEntityService())
                     {
-                        //sample sample = new sample
-                        //{
-                        //    Name = "やまのは",
-                        //    Age = 10,
-                        //};
-                        //ctx.abc.Add(sample);
-                        //int recordAffected = ctx.SaveChanges();
-
                         var q =
                         from s in db.UserMstEntities
-                        where s.userId == 1
+                        where s.UserId == 1
                         select s;
 
                         UserMstEntity[] a = q.ToArray();
