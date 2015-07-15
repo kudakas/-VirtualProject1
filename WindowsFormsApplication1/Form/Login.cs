@@ -31,6 +31,10 @@ namespace WindowsFormsApplication1
         private void LoginButton_Click(object sender, EventArgs e)
         {
             WindowState = FormWindowState.Minimized;
+
+            // メール通知メソッド
+            SendMailService service = new SendMailService();
+            service.SendMail("Hello World!!");
         }
 
         private void 終了ToolStripMenuItem_Click(object sender, EventArgs e)

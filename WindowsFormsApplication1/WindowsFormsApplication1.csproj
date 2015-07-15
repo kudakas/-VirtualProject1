@@ -94,6 +94,7 @@
     <Compile Include="Form\IndividualSetting.Designer.cs">
       <DependentUpon>IndividualSetting.cs</DependentUpon>
     </Compile>
+    <Compile Include="Service References\SendMailService.cs" />
     <Compile Include="Service References\ClipboardEventArgs.cs" />
     <Compile Include="Form\Form1.cs">
       <SubType>Form</SubType>
