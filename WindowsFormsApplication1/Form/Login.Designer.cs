@@ -40,7 +40,14 @@
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.終了ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.一覧ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.contextMenuStrip2 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.終了ToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.編集ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.申請ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ユーザー設定ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.個人設定ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.contextMenuStrip1.SuspendLayout();
+            this.contextMenuStrip2.SuspendLayout();
             this.SuspendLayout();
             // 
             // UserId
@@ -125,6 +132,47 @@
             this.一覧ToolStripMenuItem.Text = "一覧";
             this.一覧ToolStripMenuItem.Click += new System.EventHandler(this.一覧ToolStripMenuItem_Click);
             // 
+            // contextMenuStrip2
+            // 
+            this.contextMenuStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.終了ToolStripMenuItem1,
+            this.編集ToolStripMenuItem,
+            this.申請ToolStripMenuItem,
+            this.ユーザー設定ToolStripMenuItem,
+            this.個人設定ToolStripMenuItem});
+            this.contextMenuStrip2.Name = "contextMenuStrip2";
+            this.contextMenuStrip2.Size = new System.Drawing.Size(139, 114);
+            // 
+            // 終了ToolStripMenuItem1
+            // 
+            this.終了ToolStripMenuItem1.Name = "終了ToolStripMenuItem1";
+            this.終了ToolStripMenuItem1.Size = new System.Drawing.Size(138, 22);
+            this.終了ToolStripMenuItem1.Text = "終了";
+            // 
+            // 編集ToolStripMenuItem
+            // 
+            this.編集ToolStripMenuItem.Name = "編集ToolStripMenuItem";
+            this.編集ToolStripMenuItem.Size = new System.Drawing.Size(138, 22);
+            this.編集ToolStripMenuItem.Text = "編集";
+            // 
+            // 申請ToolStripMenuItem
+            // 
+            this.申請ToolStripMenuItem.Name = "申請ToolStripMenuItem";
+            this.申請ToolStripMenuItem.Size = new System.Drawing.Size(138, 22);
+            this.申請ToolStripMenuItem.Text = "登録・申請";
+            // 
+            // ユーザー設定ToolStripMenuItem
+            // 
+            this.ユーザー設定ToolStripMenuItem.Name = "ユーザー設定ToolStripMenuItem";
+            this.ユーザー設定ToolStripMenuItem.Size = new System.Drawing.Size(138, 22);
+            this.ユーザー設定ToolStripMenuItem.Text = "ユーザー設定";
+            // 
+            // 個人設定ToolStripMenuItem
+            // 
+            this.個人設定ToolStripMenuItem.Name = "個人設定ToolStripMenuItem";
+            this.個人設定ToolStripMenuItem.Size = new System.Drawing.Size(138, 22);
+            this.個人設定ToolStripMenuItem.Text = "個人設定";
+            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -140,6 +188,7 @@
             this.Text = "ログイン";
             this.Load += new System.EventHandler(this.Login_Load);
             this.contextMenuStrip1.ResumeLayout(false);
+            this.contextMenuStrip2.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -157,5 +206,11 @@
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.ToolStripMenuItem 終了ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 一覧ToolStripMenuItem;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip2;
+        private System.Windows.Forms.ToolStripMenuItem 終了ToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem 編集ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 申請ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ユーザー設定ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 個人設定ToolStripMenuItem;
     }
 }

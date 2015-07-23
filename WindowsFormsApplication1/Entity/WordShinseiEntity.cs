@@ -14,7 +14,7 @@ namespace WindowsFormsApplication1.ServiceReferences
         // 申請ID
         [Key]
         [Column("SHINSEI_ID")]
-        public Int64 ShinseiId { get; set; }
+        public string ShinseiId { get; set; }
 
         // 論理名1
         [Column("RONRI_NAME1")]
@@ -30,7 +30,7 @@ namespace WindowsFormsApplication1.ServiceReferences
 
         // 単語ID
         [Column("WORD_ID")]
-        public Int64 WordId { get; set; }
+        public string WordId { get; set; }
 
         // ステータス
         [Column("STATUS")]

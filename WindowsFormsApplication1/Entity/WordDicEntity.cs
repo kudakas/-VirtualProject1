@@ -14,7 +14,7 @@ namespace WindowsFormsApplication1.ServiceReferences
         // 単語ID
         [Key]
         [Column("WORD_ID")]
-        public Int64 WordId { get; set; }
+        public string WordId { get; set; }
 
         // 論理名1
         [Column("RONRI_NAME1")]

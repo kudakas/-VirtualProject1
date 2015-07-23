@@ -83,6 +83,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Bo\BaseBo.cs" />
     <Compile Include="Entity\ProjectMstEntity.cs" />
     <Compile Include="Entity\UserMstEntity.cs" />
     <Compile Include="Entity\WordDicEntity.cs" />
@@ -99,6 +100,14 @@
     <Compile Include="Form\IndividualSetting.Designer.cs">
       <DependentUpon>IndividualSetting.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form\NewLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\NewLogin.Designer.cs">
+      <DependentUpon>NewLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IService.cs" />
+    <Compile Include="ServiceReferences\LoginFacade.cs" />
     <Compile Include="ServiceReferences\SendMailService.cs" />
     <Compile Include="Form\judgeRequest.cs">
       <SubType>Form</SubType>
@@ -128,6 +137,8 @@
     <Compile Include="Form\WordEdit.Designer.cs">
       <DependentUpon>WordEdit.cs</DependentUpon>
     </Compile>
+    <Compile Include="Bo\UserJohoShutokuServiceInBo.cs" />
+    <Compile Include="Bo\UserJohoShutokuServiceOutBo.cs" />
     <EmbeddedResource Include="Form\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -139,6 +150,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\NewLogin.resx">
+      <DependentUpon>NewLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form\UserManagement.resx">
       <DependentUpon>UserManagement.cs</DependentUpon>

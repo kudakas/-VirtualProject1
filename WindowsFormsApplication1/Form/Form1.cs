@@ -152,6 +152,8 @@ namespace WindowsFormsApplication1
 
                     }
 
+
+
                     // 登録メッセージを表示
                     MessageBox.Show("ﾄｳﾛｸﾃﾞｷﾀ━━━━(　´∀｀)━━━━!!!!");
                 //}
